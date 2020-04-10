@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+</head>
+<body>
+    <img src="https://i.ibb.co/zZz9KfD/survey.jpg" width="200px">
+    <hr/>
+    <form action="mailto:akshatm124@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name: <input id="name" name="name" type="text" placeholder="Jebediah kerman" required></label>
+        <br><br>
+        <label for="dob">Date of Birth: <input id="dob" name="dob" type="date"></label>
+        <br><br>
+        <label for="country">Country: <input id="country" name="country" type="text" placeholder="India" required></label>
+        <label for="State">  State:<select name="state">
+            <option value="HP">Himachal Pradesh</option>
+            <option value="PB">Punjab</option>
+            <option value="UK">Uttrakhand</option>
+            <option value="HR">Haryana</option>
+            <option value="DL">Delhi</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="GJ">Gujarat</option>
+        </select></label>
+        <br><br>
+        <label for="city">City: <input id="city" name="city" type="text" placeholder="Bhopal" required></label>
+        <br><br>
+        <label for="add">Street Address: <input id="add" name="add" type="text" placeholder="#House Number, street" required></label>
+        <br><br>
+        <label for="pin">PIN Code: <input id="pin" name="pin" type="number" placeholder="100000" required></label>
+        <br><br>
+        <label for="phno">Contact no.: <input id="phno" name="phno" type="tel" placeholder="1234567890" pattern="[0-9]{6,10}" required></label>
+        <br><br>
+        <label>Gender: Male <input type="radio" name="gender" value="male" required> Female <input type="radio" name="gender" value="female" required> Other <input type="radio" name="gender" value="other" required></label>
+        <br><br>
+        <label for="pwd">Password: <input id="pwd" name="pwd" type="password" placeholder="Password" minlength="8" required></label>
+        <br><br>
+        <label>What is your opinion towards Space Program Simulators?<br>
+            Good<input type="radio" name="opinion" value="good">&nbsp;Okayish<input type="radio" name="opinion" value="okay">
+            <br>
+            Meh<input type="radio" name="opinion" value="don't care">&nbsp;Blasphemy<input type="radio" name="opinion" value="should'nt exist">
+        </label>
+        <br><br>
+        <label for="accu">If one such space program simulator was to exist.<br>How <b>Accurate</b> would you like it to be? &nbsp;<select name="accu">
+            <option value="pro">Professional</option>
+            <option value="hard">Hardcore</option>
+            <option value="10th">Average</option>
+            <option value="baby">Basic</option>
+        </select></label>
+        <br><br>
+        <label for="ksp"><img src="https://i.ibb.co/mXzBYP9/ksp.jpg" width="100px"><br> Heard of KSP ? &nbsp;<input id="ksp" name="ksp" type="checkbox">Yes</label>
+        <br><br>
+        <label for="sugg">Any suggestions for such simulators?<br><textarea id="sugg" name="sugg" rows="5" cols="25"></textarea></label>
+        <br><br>
+        <label for="feed">Feedback: <br><textarea id="feed" name="feed" rows="15" cols="15"></textarea></label>
+        <br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+</form>
+</body>
+</html>
